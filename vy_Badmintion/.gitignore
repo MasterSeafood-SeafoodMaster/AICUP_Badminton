@@ -1,0 +1,7 @@
+Dataset/train/*
+Dataset/val/*
+Dataset/transfer_t/*
+Dataset/transfer_v/*
+
+models/*
+traced_model.pt
