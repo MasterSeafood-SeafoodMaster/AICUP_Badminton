@@ -74,11 +74,11 @@ class yoloModel:
         self.bbox = bbox
         self.image = image
         for p in self.bbox:
-            #if p[4]==0: color=(255, 255, 0)
-            #elif p[4]==1: color=(0, 255, 255)
-            #elif p[4]==2: color=(255, 0, 255)
-            #elif p[4]==3: color=(255, 0, 0)
-            color=(0, 255, 255)
+            if p[4]==0: color=(255, 255, 0)
+            elif p[4]==1: color=(0, 255, 255)
+            elif p[4]==2: color=(255, 0, 255)
+            elif p[4]==3: color=(255, 0, 0)
+            #color=(0, 255, 255)
             self.image = cv2.rectangle(self.image, (int(p[0]), int(p[1])), (int(p[2]), int(p[3])), color, 2)
         return self.image
 

@@ -5,3 +5,4 @@ Dataset/transfer_v/*
 
 models/*
 traced_model.pt
+getPic.py
