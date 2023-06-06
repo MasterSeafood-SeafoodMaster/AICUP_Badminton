@@ -43,13 +43,17 @@ Balltype_mlp=MLP(56, 7)
 Balltype_mlp = torch.load("./models/mlp_models/balltype_mlp_lastone.pth")
 Balltype_mlp.eval()
 
-txtroot = "./Dataset/transfer_v/"
+txtroot = "./Dataset/transfer_t/"
 csvroot = "./Dataset/train/"
 rootFolders = os.listdir(txtroot)
 
 df = pd.DataFrame()
 dfidx=0
 columns = ["VideoName", "ShotSeq", "HitFrame", "Hitter", "RoundHead", "Backhand", "BallHeight", "LandingX", "LandingY", "HitterLocationX","HitterLocationY", "DefenderLocationX", "DefenderLocationY", "BallType", "Winner"]
+
+
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+#out = cv2.VideoWriter('output.mp4', fourcc, 30.0, (1280,  720))
 
 for folders in rootFolders:
     print(folders)
@@ -418,7 +422,9 @@ for folders in rootFolders:
 
 
             cv2.imshow("i",bframe)
+            #out.write(bframe)
             cv2.waitKey(sleep)
-
+    #break
+#out.release()
 df.columns = columns
 df.to_csv('output.csv', index=False)

@@ -7,3 +7,4 @@ models/*
 traced_model.pt
 getPic.py
 __pycache__/
+output.csv
