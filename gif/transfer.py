@@ -4,8 +4,8 @@ from PIL import Image
 import os
 
 # 定義輸入MP4文件路徑、輸出GIF文件路徑和壓縮比率
-input_file = 'origin.mp4'
-output_file = 'origin.gif'
+input_file = 'comb.mp4'
+output_file = 'comb.gif'
 compression_ratio = 20  # 壓縮比率，越小則壓縮後的GIF文件越小
 speed_factor = 1  # 加速倍率
 
@@ -13,7 +13,7 @@ speed_factor = 1  # 加速倍率
 video = VideoFileClip(input_file)
 
 # 調整大小和加速影片
-resized_video = video.resize((640, 360))
+resized_video = video.resize((640, 720))
 accelerated_video = vfx.speedx(resized_video, speed_factor)
 
 # 創建一個臨時文件夾來保存影格圖像
