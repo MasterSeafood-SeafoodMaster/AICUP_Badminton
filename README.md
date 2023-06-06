@@ -36,3 +36,8 @@ This script will preprocess the data to prepare it for recognition.
   python trace.py
 ```
 
+## Demo
+<img src="./gif/comb.gif" alt="替代文字" style="width: 1280px;">
+
+
+
