@@ -4,7 +4,7 @@ This repository contains the necessary steps to perform a recognition task using
 
 ## Step 1: Download Model and Dataset
 
-- Download the "model" and "dataset" folders from [this Google Drive link](https://drive.google.com/drive/folders/13UeUIDSr7yQ65lF-vhTPtmwmLgU8V0yQ?usp=sharing).
+- Download the "model" and "dataset" folders from [this Google Drive link]([https://drive.google.com/drive/folders/13UeUIDSr7yQ65lF-vhTPtmwmLgU8V0yQ?usp=sharing](https://drive.google.com/drive/folders/1jAv7HjAsrazy5h1WWk6YwKYWmHY2UvE6?usp=drive_link)).
 - Place the downloaded folders in ./AICUP_Badminton.
 
 ## Step 2: Prepare the Official Dataset
